@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-interpolation',
   imports: [],
   templateUrl: './interpolation.html',
-  styleUrl: './interpolation.scss',
+  styleUrls: ['./interpolation.scss'],
 })
 export class Interpolation {
   // this is an example of interpolation in Angular, where
