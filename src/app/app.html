@@ -1,6 +1,28 @@
-<app-header></app-header>
-<h3>App.html</h3>
-<app-interpolation></app-interpolation>
+<!-- <app-header></app-header> -->
+<!-- <h3>App.html</h3> -->
+<!-- <app-interpolation></app-interpolation>
 <app-databinding></app-databinding>
 <app-eventbinding></app-eventbinding>
-<app-twowaydatabinding></app-twowaydatabinding>
+<app-twowaydatabinding></app-twowaydatabinding> -->
+
+<!-- @if (authService.currentUserSig(); as currentUser) {
+  <div class="user-menu">
+    <span>{{ currentUser.username }}</span>
+    <button type="button" (click)="logout()">Logout</button>
+  </div>
+} @else {
+  <div class="auth-links">
+    <a routerLink="/login">Login</a>
+    <a routerLink="/register">Register</a>
+  </div>
+} -->
+
+<div class="auth-links">
+  <a routerLink="/login">Login</a>
+  <a routerLink="/register">Register</a>
+</div>
+<div class="user-menu">
+  <button type="button" (click)="logout()">Logout</button>
+</div>
+
+<router-outlet></router-outlet>
